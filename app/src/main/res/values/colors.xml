@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- PDFTron -->
+    <color name="colorPrimary">#0a1481</color>
+    <color name="colorPrimaryDark">#1b1d20</color>
+    <color name="colorAccent">#ffffffde</color>
+    <color name="annotation_tool_background">#f2fafb</color>
+    <color name="toolbar_icon">#ffffffde</color>
+    <color name="bottombar_background">#0a1481</color>
 </resources>
