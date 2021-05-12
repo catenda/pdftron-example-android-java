@@ -16,7 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ViewerConfig config = new ViewerConfig.Builder().openUrlCachePath(this.getCacheDir().getAbsolutePath()).build();
+        
         final Uri fileLink = Uri.parse("https://pdftron.s3.amazonaws.com/downloads/pdfref.pdf");
-        DocumentActivity.openDocument(this, fileLink, config);
+        final Uri uri = Uri.parse("file:///android_asset/test with^&!@£$%^&*()links.pdf"); // Doesn't open, no error
+//        final Uri uri = Uri.parse("file:///android_asset/test_with_links.pdf"); // Works
+        DocumentActivity.openDocument(this, uri, config);
     }
 }
